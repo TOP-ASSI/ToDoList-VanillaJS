@@ -6,11 +6,15 @@ function getTime() {
   const hours = date.getHours();
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
-  console.log(clockContainer, clockTitle);
-  clockTitle.innerText = `${hours}:${minutes}:${seconds}`;
+
+  const zfill = function (value) {
+    return value < 10 ? `0${value}` : value;
+  };
+  clockTitle.innerText = `${zfill(hours)}:${zfill(minutes)}:${zfill(seconds)}`;
 }
 
 function init() {
   getTime();
+  setInterval(getTime, 1000);
 }
 init();
