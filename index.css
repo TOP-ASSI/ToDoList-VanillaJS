@@ -3,5 +3,13 @@ body {
 }
 
 h1 {
-  /* color: #ffffff; */
+  color: #ffffff;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.clicked {
+  color: #00ff00;
 }
