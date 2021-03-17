@@ -13,3 +13,11 @@ h1 {
 .clicked {
   color: #00ff00;
 }
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
